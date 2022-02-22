@@ -1,0 +1,28 @@
+{
+  "dispositivos": [
+    {
+      "id": "548565411",
+      "nombre": "SAMSUNG_A50",
+      "tipo": "celular",
+	  "OS":"Android"
+    },
+	{
+      "id": "314709542",
+      "nombre": "HUAWEI_Y62",
+      "tipo": "celular",
+	  "OS":"Android"
+    },
+	{
+      "id": "2336364",
+      "nombre": "iPhone 11 128GB",
+      "tipo": "celular",
+	  "OS":"iOS"
+    },
+	{
+      "id": "75465412",
+      "nombre": "Lenovo portátil s145",
+      "tipo": "laptop",
+	  "OS":"Windows"
+    }
+  ]
+}
