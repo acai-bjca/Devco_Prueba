@@ -17,9 +17,11 @@ Una vez se actualice el archivo, se debe establecer en el disco local C, para el
 cual permite crear un API Rest con la persistencia en un archivo json
 npm install -g json-server
 
-
 4. Una vez finalice la instalación se debe arrancar el servidor del API REST con los datos del json del archivo "dispositivos.json" ejecutando el siguinte comando
 npx json-server --watch dispositivos.json
 
- Una vez arranque el aPI client, se puede ejecutar el aplicativo de Devco el cual correrá por el puerto 9000 ya que así se cogifuro en el archivo apiRest.properties.
+5. Una vez arranque el aPI client, se puede ejecutar el aplicativo de Devco el cual correrá por el puerto 9000 ya que así se cogifuro en el archivo apiRest.properties.
+
+
+NOTA: Front en construcción
 
