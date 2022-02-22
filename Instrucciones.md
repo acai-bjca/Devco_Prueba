@@ -2,8 +2,11 @@
 
 ### Pre-requisitos
 NodeJS https://nodejs.org/es/download/
+
 Java 1.8 https://www.java.com/es/download/help/windows_manual_download.html
+
 Oracle Database 11g 
+
 Interfaz de usuario para manejo de oracle, en mi caso usé sqldeveloper https://www.oracle.com/co/tools/technologies/whatis-sql-developer.html
 
 
