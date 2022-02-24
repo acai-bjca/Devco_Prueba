@@ -21,7 +21,7 @@ import java.util.List;
 @Service
 public class AsignacionesService implements IAsignacionesService{
 
-	@Autowired
+	@Inject
 	private ExternalAPIBusiness externalAPIBusiness;
 
 	@Inject

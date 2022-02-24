@@ -11,10 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.devco.config.Endpoints;
 import com.devco.dto.ApiResponse;
+import com.devco.dto.Asignacion;
 import com.devco.exceptions.APIException;
 import com.devco.services.impl.AsignacionesService;
 
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -24,11 +26,10 @@ public class Controller {
 	@Autowired
 	private AsignacionesService asignacionesService;
 
-	@PostMapping(Endpoints.URL_DISPOSITIVO)
-	public ResponseEntity<ApiResponse<Boolean>> asignarDotacion(@PathVariable String dispositivoId,
-			@PathVariable Long empleadoId) {
+	@PostMapping(Endpoints.URL_ASIGNACIONES)
+	public ResponseEntity<ApiResponse<Boolean>> asignarDotacion(@RequestBody Asignacion asignacion) {
 		try {
-			ApiResponse<Boolean> apiResponse = asignacionesService.asignarDispositivo(dispositivoId, empleadoId);
+			ApiResponse<Boolean> apiResponse = asignacionesService.asignarDispositivo(asignacion.getDispositivoId(), asignacion.getEmpleadoId());
 			return ResponseEntity.status(HttpStatus.OK)
 					.body(apiResponse);
 		} catch (APIException e) {
