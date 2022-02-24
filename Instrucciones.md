@@ -26,5 +26,8 @@ npx json-server --watch dispositivos.json
 5. Una vez arranque el API client, se puede ejecutar el aplicativo de Devco el cual correrá por el puerto 9000 como se configuró en el archivo apiRest.properties.
 El back se encuentra en el directorio "dotaciones"
 
-NOTA: Front en construcción
+6. Para ejecutar el front "apidevcoFront" use el comando 'npm install' para instalarlos paquetes usados
 
+7. Al terminar la instalación, corra la aplicación con 'npm start' o 'ng serve --open'.
+'ng serve --open' reconstruye y abre la aplicación 
+'npm start' corre comandos definidos en la propiedad "start" del "script" o por defecto ejecuta 'node server.js', si la propiedad start no está definida
